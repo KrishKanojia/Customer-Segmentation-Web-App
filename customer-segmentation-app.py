@@ -58,9 +58,9 @@ Welcome! This application helps you understand customer behavior in online retai
 
 # Input form
 with st.form("rfm_form"):
-    recency = st.number_input("📅 How many days since their last purchase?", min_value=0, max_value=1000, value=30)
-    frequency = st.number_input("🛒 How many times have they purchased?", min_value=0, max_value=100, value=5)
-    monetary = st.number_input("💰 How much have they spent in total?", min_value=0, max_value=100000, value=1000)
+    recency = st.number_input("📅 How many days since you last purchased?", min_value=0, max_value=1000, value=30)
+    frequency = st.number_input("🛒 How many times have you purchased?", min_value=0, max_value=100, value=5)
+    monetary = st.number_input("💰 How much have you spent in total?", min_value=0, max_value=100000, value=1000)
     
     submitted = st.form_submit_button("🔍 Identify Customer Segment")
 
